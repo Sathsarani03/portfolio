@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>W.J.M. Sathsarani Arambepola | Data Science Portfolio</title>
+  <meta name="description" content="Data Science portfolio showcasing projects, skills, and experience." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Background blobs -->
+  <div class="bg-blob blob-1" aria-hidden="true"></div>
+  <div class="bg-blob blob-2" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Amy</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="icon-btn nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          ☰
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-ghost" href="#projects">View Projects</a>
+        <button class="btn btn-solid" id="themeToggle" type="button" aria-label="Toggle theme">
+          🌙
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="pill">SLTC University • Data Science (Specialized) • May 2025 — Present</p>
+
+          <h1>
+            Hi, I’m <span class="accent">Amy</span> 👋<br />
+            I build data-driven projects and love turning messy data into clear insights.
+          </h1>
+          <p class="muted">
+            Portfolio of projects, skills, and experience. I’m interested in data analytics, ML, and practical systems.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-solid" href="#contact">Contact Me</a>
+            <a class="btn btn-ghost" href="#about">About Me</a>
+          </div>
+
+          <div class="mini-stats">
+            <div class="stat">
+              <div class="stat-num" id="statProjects">6+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" id="statTech">10+</div>
+              <div class="stat-label">Tools / Skills</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" id="statCollab">3+</div>
+              <div class="stat-label">Team Work</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="profile-card">
+            <div class="avatar" aria-hidden="true">A</div>
+            <div>
+              <h2 class="card-title">Amy</h2>
+              <p class="card-subtitle">Data Science Undergraduate • SLTC</p>
+              <p class="card-note">
+                Currently building a strong portfolio: analytics dashboards, ML experiments, and real-world mini-systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="quick-links">
+            <a class="chip" href="#" id="githubLink" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="chip" href="#" id="linkedinLink" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="chip" href="#" id="kaggleLink" target="_blank" rel="noreferrer">Kaggle</a>
+            <a class="chip" href="#" id="cvLink" target="_blank" rel="noreferrer">Download CV</a>
+          </div>
+
+          <div class="note-box">
+            <strong>Open to:</strong>
+            <p class="muted">internships • projects • research support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="muted">A quick snapshot of who I am and what I’m aiming for.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Summary</h3>
+            <p>
+              I’m a Data Science undergraduate at SLTC University. I enjoy learning by building projects —
+              especially in data analytics, machine learning, and practical applications.
+            </p>
+            <p class="muted">
+              I focus on clean code, clear documentation, and explaining results in a simple way.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Highlights</h3>
+            <ul class="list">
+              <li>✅ Strong interest in analytics & ML</li>
+              <li>✅ Comfortable with teamwork and presentations</li>
+              <li>✅ Learning Python, SQL, and data tools step-by-step</li>
+              <li>✅ Building portfolio projects consistently</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="muted">Tools and areas I’m working with (and improving).</p>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">Some projects that show my skills and growth.</p>
+        </div>
+
+        <div class="filters">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="analytics">Analytics</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn" data-filter="db">Database</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience (optional) -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p class="muted">Leadership, volunteering, clubs, internships — add what you have.</p>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head">
+          <h2>Education</h2>
+          <p class="muted">Academic background and key modules.</p>
+        </div>
+
+        <div class="card">
+          <div class="edu-row">
+            <div>
+              <h3 class="edu-title">SLTC University</h3>
+              <p class="muted">BSc in Data Science (Specialized)</p>
+            </div>
+            <div class="edu-meta">
+              <span class="badge">Undergraduate</span>
+              <span class="badge" id="eduYear">2025 — Present</span>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <h4>Relevant Modules (edit this list)</h4>
+          <div class="tags" id="moduleTags">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Want to collaborate or ask something? Send a message.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Message</h3>
+            <form id="contactForm">
+              <label class="label">
+                Your Name
+                <input class="input" name="name" placeholder="Your name" required />
+              </label>
+
+              <label class="label">
+                Your Email
+                <input class="input" name="email" type="email" placeholder="you@email.com" required />
+              </label>
+
+              <label class="label">
+                Message
+                <textarea class="input textarea" name="message" placeholder="Write your message..." required></textarea>
+              </label>
+
+              <button class="btn btn-solid" type="submit">Create Email</button>
+              <p class="muted tiny" id="contactHelp">
+                This will open your email app with the message (no server needed).
+              </p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Details</h3>
+            <p class="muted">Replace these with your real links and email.</p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <div class="contact-value">
+                  <code id="myEmail">yourname@email.com</code>
+                  <button class="icon-btn" id="copyEmailBtn" type="button" aria-label="Copy email">📋</button>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label">Location</span>
+                <div class="contact-value">Sri Lanka</div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label">GitHub</span>
+                <div class="contact-value"><a href="#" id="githubLink2" target="_blank" rel="noreferrer">github.com/yourname</a></div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label">LinkedIn</span>
+                <div class="contact-value"><a href="#" id="linkedinLink2" target="_blank" rel="noreferrer">linkedin.com/in/yourname</a></div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <h4>Quick Summary (for recruiters)</h4>
+            <p class="muted">
+              Data Science undergraduate focused on analytics + ML. Strong interest in building real projects and learning fast.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span id="year"></span> Amy • Built with HTML/CSS/JS</p>
+        <a class="to-top" href="#top">↑ Back to top</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
