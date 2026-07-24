@@ -123,8 +123,7 @@ if (heroTitle) {
     Data Science Undergraduate at SLTC University.
   `;
 }
-const avatar = document.querySelector(".avatar");
-if (avatar) avatar.textContent = PROFILE.shortName[0].toUpperCase();
+
 
 function setHref(id, url) {
   const el = $(id);
