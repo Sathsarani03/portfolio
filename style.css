@@ -189,14 +189,18 @@ a{ color: inherit; text-decoration: none; }
   align-items: flex-start;
 }
 .avatar{
-  width: 58px; height: 58px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, rgba(124,92,255,0.85), rgba(34,197,94,0.55));
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight: 900;
-  font-size: 1.35rem;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    overflow:hidden;
+    border:5px solid #2563EB;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 .card-title{ margin: 2px 0 2px; }
 .card-subtitle{ margin: 0; color: var(--muted); font-weight: 700; }
