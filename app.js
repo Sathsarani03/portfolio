@@ -8,7 +8,7 @@ const PROFILE = {
     github: "https://github.com/Sathsarani03",
     linkedin: "https://www.linkedin.com/in/sathsarani-arambepola-10b4a233a",
     kaggle: "#", // you said currently no
-    cv: "cv/MyCV.pdf"      // add later if you make a CV PDF
+    cv: "cv/MyCv.pdf"      // add later if you make a CV PDF
   }
 };
 
