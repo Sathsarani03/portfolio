@@ -26,6 +26,20 @@
     border:none;
 }
 
+.cert-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:linear-gradient(
+        90deg,
+        var(--accent),
+        var(--accent2)
+    );
+}
+
 .cert-card:hover{
     transform:translateY(-8px);
     box-shadow:0 20px 45px rgba(124,92,255,0.25);
