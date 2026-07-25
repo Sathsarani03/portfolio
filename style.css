@@ -23,13 +23,13 @@
 .cert-card{
     position:relative;
     overflow:hidden;
-    background:#ffffff;
-    color:#111827;
+    border:1px solid var(--border);
+    background:var(--card);
     border-radius:20px;
     padding:20px;
     transition:all .35s ease;
-    box-shadow:0 15px 35px rgba(0,0,0,0.18);
-    border:none;
+    backdrop-filter:blur(12px);
+    box-shadow:var(--shadow);
 }
 
 
