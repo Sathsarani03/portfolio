@@ -101,6 +101,14 @@ themeToggle.addEventListener("click", () => {
   updateThemeIcon();
 });
 
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
 // ---------- Mobile nav ----------
 const navToggle = $("#navToggle");
 const navList = $("#navList");
