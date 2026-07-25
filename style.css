@@ -372,6 +372,10 @@ a{ color: inherit; text-decoration: none; }
 .tdate{ color: var(--muted); font-weight: 900; }
 .tdesc{ margin: 10px 0 0; color: var(--muted); }
 
+section[id] {
+  scroll-margin-top: 80px; /* adjust to match your header's height */
+}
+
 .edu-row{
   display:flex;
   justify-content: space-between;
