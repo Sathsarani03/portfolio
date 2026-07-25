@@ -14,6 +14,12 @@
   --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
 }
 
+.certifications-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
 .cert-card{
     position:relative;
     overflow:hidden;
@@ -26,23 +32,27 @@
     border:none;
 }
 
+
 .cert-card::before{
     content:"";
     position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:4px;
+    inset:0;
     background:linear-gradient(
-        90deg,
-        var(--accent),
-        var(--accent2)
+        135deg,
+        rgba(124,92,255,.12),
+        rgba(34,197,94,.08)
     );
+    opacity:0;
+    transition:.35s ease;
+}
+
+.cert-card:hover::before{
+    opacity:1;
 }
 
 .cert-card:hover{
     transform:translateY(-8px);
-    box-shadow:0 20px 45px rgba(124,92,255,0.25);
+    border-color:rgba(124,92,255,.4);
 }
 
 .cert-icon{
@@ -55,17 +65,17 @@
     background:rgba(124,92,255,.15);
     border:1px solid rgba(124,92,255,.25);
     font-size:1.4rem;
+    margin-bottom:16px;
 }
 
 .cert-title{
-    color:#111827;
     font-size:1.1rem;
     font-weight:800;
     margin-bottom:6px;
 }
 
 .cert-provider{
-    color:#6b7280;
+    color:var(--muted);
     font-size:.92rem;
     margin-bottom:14px;
 }
@@ -78,12 +88,12 @@
 }
 
 .cert-badge{
-    padding:6px 12px;
+    padding:6px 10px;
     border-radius:999px;
-    background:#f3f4f6;
-    color:#111827;
+    border:1px solid var(--border);
+    background:var(--card2);
     font-size:.8rem;
-    font-weight:700;
+    font-weight:800;
 }
 
 .cert-link{
